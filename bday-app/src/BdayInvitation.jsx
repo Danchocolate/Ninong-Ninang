@@ -187,6 +187,8 @@ function RSVPForm() {
 
   return (
     <form
+      action="https://formsubmit.co/arvineil13@yahoo.com.ph"
+      method="POST"
       style={{
         maxWidth: "500px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "clamp(1rem, 3vw, 1.5rem)",
         background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
@@ -199,7 +201,7 @@ function RSVPForm() {
         setLoading(true);
         const formData = new FormData(e.target);
         try {
-          await fetch("https://formsubmit.co/ajax/arvineil13@yahoo.com.ph", {
+          const res = await fetch("https://formsubmit.co/ajax/arvineil13@yahoo.com.ph", {
             method: "POST",
             headers: {
               'Content-Type': 'application/json',
@@ -207,10 +209,11 @@ function RSVPForm() {
             },
             body: JSON.stringify(Object.fromEntries(formData))
           });
+          if (!res.ok) throw new Error("Fetch failed");
           setSent(true);
         } catch (error) {
-          console.error(error);
-          setSent(true);
+          console.error("AJAX failed, falling back to native submission:", error);
+          e.target.submit(); // Native submission will handle the redirect for activation
         } finally {
           setLoading(false);
         }

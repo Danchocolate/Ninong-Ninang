@@ -129,12 +129,12 @@ function Countdown() {
       {items.map((item) => (
         <div key={item.label} style={{ textAlign: "center" }}>
           <div style={{
-            width: "70px", height: "70px", borderRadius: "16px",
+            width: "clamp(55px, 15vw, 70px)", height: "clamp(55px, 15vw, 70px)", borderRadius: "16px",
             background: "white",
-            border: `4px solid ${item.color}`,
+            border: `clamp(2px, 1vw, 4px) solid ${item.color}`,
             display: "flex", alignItems: "center", justifyContent: "center",
             fontFamily: "'Fredoka One', cursive",
-            fontSize: "1.8rem", color: item.color,
+            fontSize: "clamp(1.2rem, 4vw, 1.8rem)", color: item.color,
             boxShadow: `0 6px 16px ${item.color}33`,
             transform: "rotate(-3deg)",
             transition: "transform 0.3s ease",
@@ -188,8 +188,8 @@ function RSVPForm() {
   return (
     <form
       style={{
-        maxWidth: "500px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "1.5rem",
-        background: "white", padding: "2.5rem", borderRadius: "24px",
+        maxWidth: "500px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "clamp(1rem, 3vw, 1.5rem)",
+        background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
         boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
         position: "relative",
         borderTop: `8px solid ${C.blue}`
@@ -219,7 +219,7 @@ function RSVPForm() {
       <input type="hidden" name="_subject" value="New Birthday RSVP!" />
       <input type="hidden" name="_captcha" value="false" />
       <img src="/images/cookie.png" alt="Cookie Monster" style={{
-        position: "absolute", top: "-120px", right: "-100px", width: "400px",
+        position: "absolute", top: "clamp(-60px, -15vw, -120px)", right: "clamp(-40px, -15vw, -100px)", width: "clamp(200px, 50vw, 400px)",
         filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.15))",
         animation: "peek 3s ease-in-out infinite alternate"
       }} />
@@ -367,7 +367,7 @@ export default function BdayInvitation() {
         .nav-btn {
           font-family: 'Nunito', sans-serif;
           font-weight: 800;
-          font-size: 0.9rem;
+          font-size: clamp(0.75rem, 2vw, 0.9rem);
           color: ${C.textDark};
           background: none;
           border: none;
@@ -404,8 +404,8 @@ export default function BdayInvitation() {
           }} />
 
           <div style={{
-            background: "white", padding: "1.5rem 3rem", borderRadius: "50px",
-            border: `6px solid ${C.green}`,
+            background: "white", padding: "clamp(1rem, 4vw, 1.5rem) clamp(1.5rem, 8vw, 3rem)", borderRadius: "50px",
+            border: `clamp(3px, 1.5vw, 6px) solid ${C.green}`,
             boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
             marginTop: "-30px", position: "relative", zIndex: 10,
             transform: "rotate(-2deg)"
@@ -450,7 +450,7 @@ export default function BdayInvitation() {
         }}>
           DANE
         </div>
-        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", justifyContent: "flex-end" }}>
+        <div style={{ display: "flex", gap: "clamp(0.2rem, 1vw, 0.5rem)", flexWrap: "wrap", justifyContent: "flex-end", flex: 1, marginLeft: "1rem" }}>
           {nav.map(n => (
             <button key={n.id} className="nav-btn" onClick={() => go(n.id)}>{n.label}</button>
           ))}
@@ -505,8 +505,8 @@ export default function BdayInvitation() {
             </p>
 
             <img src="/images/1.JPG" alt="Dane" style={{
-              width: "280px", height: "280px", objectFit: "cover",
-              borderRadius: "50%", border: `8px solid ${C.red}`,
+              width: "clamp(200px, 60vw, 280px)", height: "clamp(200px, 60vw, 280px)", objectFit: "cover",
+              borderRadius: "50%", border: `clamp(4px, 2vw, 8px) solid ${C.red}`,
               boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
               margin: "0 auto 2rem"
             }} />
@@ -518,12 +518,12 @@ export default function BdayInvitation() {
 
       {/* ── DETAILS ── */}
       <section id="details" ref={detailsRef} style={{
-        padding: "6rem 1.5rem",
+        padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
         background: `linear-gradient(to bottom, #ffffff, ${C.bgLight})`,
         position: "relative"
       }}>
         {/* Peek1 between Hero and Details */}
-        <img src="/images/peek1.png" alt="" style={{ position: "absolute", top: "-120px", left: "-10.5%", width: "220px", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 5px 15px rgba(0,0,0,0.2))" }} />
+        <img src="/images/peek1.png" alt="" style={{ position: "absolute", top: "clamp(-60px, -15vw, -120px)", left: "clamp(-5%, -10vw, -10.5%)", width: "clamp(120px, 30vw, 220px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 5px 15px rgba(0,0,0,0.2))" }} />
 
         <img src="/images/bert.png" alt="" style={{ position: "absolute", bottom: "0%", left: "-80%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
         <img src="/images/ernie.png" alt="" style={{ position: "absolute", top: "0%", right: "-10%", width: "70vw", minWidth: "400px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
@@ -531,10 +531,10 @@ export default function BdayInvitation() {
         <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
           <SectionHeader subtitle="Where & When" title="Party Details" color={C.orange} />
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(1.5rem, 5vw, 2rem)" }}>
 
             <div style={{
-              background: "white", padding: "2.5rem", borderRadius: "24px",
+              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
               textAlign: "center", border: `3px solid ${C.blue}`,
               boxShadow: `0 10px 30px ${C.blue}22`,
               position: "relative"
@@ -556,7 +556,7 @@ export default function BdayInvitation() {
             </div>
 
             <div style={{
-              background: "white", padding: "2.5rem", borderRadius: "24px",
+              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
               textAlign: "center", border: `3px solid ${C.orange}`,
               boxShadow: `0 10px 30px ${C.orange}22`,
               position: "relative"
@@ -581,12 +581,12 @@ export default function BdayInvitation() {
             </div>
 
             <div style={{
-              background: "white", padding: "2.5rem", borderRadius: "24px",
+              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
               textAlign: "center", border: `3px solid ${C.green}`,
               boxShadow: `0 10px 30px ${C.green}22`,
               position: "relative"
             }}>
-              <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "-90px", right: "10%", width: "220px", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
+              <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-50px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
               <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
                 <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
               </div>
@@ -655,7 +655,7 @@ export default function BdayInvitation() {
 
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 200px), 1fr))",
             gap: "1.5rem",
             padding: "1rem"
           }}>
@@ -696,11 +696,11 @@ export default function BdayInvitation() {
 
       {/* ── RSVP & FOOTER ── */}
       <section id="rsvp" ref={rsvpRef} style={{
-        padding: "6rem 1.5rem",
+        padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
         background: `radial-gradient(circle at center, ${C.red}11, transparent)`,
         position: "relative"
       }}>
-        <img src="/images/peek3.png" alt="" style={{ position: "absolute", bottom: "-20%", left: "-7%", width: "250px", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 -5px 15px rgba(0,0,0,0.2))" }} />
+        <img src="/images/peek3.png" alt="" style={{ position: "absolute", bottom: "-20%", left: "-7%", width: "clamp(150px, 35vw, 250px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 -5px 15px rgba(0,0,0,0.2))" }} />
         <img src="/images/kermit.png" alt="" style={{ position: "absolute", bottom: "-5%", right: "-55%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
 
         <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 1 }}>

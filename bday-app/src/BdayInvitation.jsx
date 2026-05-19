@@ -530,6 +530,7 @@ export default function BdayInvitation() {
         </div>
       </nav>
 
+      <div style={{ overflowX: "hidden", width: "100%", position: "relative" }}>
       {/* ── HERO ── */}
       <section id="home" style={{
         minHeight: "100vh",
@@ -798,6 +799,7 @@ export default function BdayInvitation() {
           </div>
         </div>
       </section>
+      </div>
 
     </>
   );

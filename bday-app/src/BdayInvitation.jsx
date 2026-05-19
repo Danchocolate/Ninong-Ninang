@@ -531,274 +531,274 @@ export default function BdayInvitation() {
       </nav>
 
       <div style={{ overflowX: "hidden", width: "100%", position: "relative" }}>
-      {/* ── HERO ── */}
-      <section id="home" style={{
-        minHeight: "100vh",
-        background: `radial-gradient(circle at top right, ${C.yellow}22, transparent), radial-gradient(circle at bottom left, ${C.blue}22, transparent)`,
-        display: "flex", flexDirection: "column",
-        alignItems: "center", justifyContent: "center",
-        position: "relative",
-        padding: "7rem 1.5rem 5rem",
-      }}>
+        {/* ── HERO ── */}
+        <section id="home" style={{
+          minHeight: "100vh",
+          background: `radial-gradient(circle at top right, ${C.yellow}22, transparent), radial-gradient(circle at bottom left, ${C.blue}22, transparent)`,
+          display: "flex", flexDirection: "column",
+          alignItems: "center", justifyContent: "center",
+          position: "relative",
+          padding: "7rem 1.5rem 5rem",
+        }}>
 
-        {/* Decor */}
-        <img src="/images/bigbird.png" alt="" style={{ position: "absolute", bottom: "-3%", right: "-80%", width: "200vw", minWidth: "450px", opacity: 0.2, pointerEvents: "none", transform: "scaleX(-1)", animation: "bounce 9s infinite alternate-reverse", zIndex: 10 }} />
+          {/* Decor */}
+          <img src="/images/bigbird.png" alt="" style={{ position: "absolute", bottom: "-3%", right: "-80%", width: "200vw", minWidth: "450px", opacity: 0.2, pointerEvents: "none", transform: "scaleX(-1)", animation: "bounce 9s infinite alternate-reverse", zIndex: 10 }} />
 
-        <div className="fade-up" style={{ textAlign: "center", zIndex: 1, position: "relative", maxWidth: "800px" }}>
-          <div style={{
-            background: "white", padding: "3rem", borderRadius: "40px",
-            boxShadow: "0 20px 50px rgba(0,0,0,0.08)",
-            border: `4px dashed ${C.yellow}`
-          }}>
-            <p style={{
-              fontFamily: "'Nunito', sans-serif", fontSize: "1rem", letterSpacing: "0.2em",
-              color: C.textMuted, textTransform: "uppercase", marginBottom: "1rem", fontWeight: 800
+          <div className="fade-up" style={{ textAlign: "center", zIndex: 1, position: "relative", maxWidth: "800px" }}>
+            <div style={{
+              background: "white", padding: "3rem", borderRadius: "40px",
+              boxShadow: "0 20px 50px rgba(0,0,0,0.08)",
+              border: `4px dashed ${C.yellow}`
             }}>
-              Join us on Sesame Street!
-            </p>
+              <p style={{
+                fontFamily: "'Nunito', sans-serif", fontSize: "1rem", letterSpacing: "0.2em",
+                color: C.textMuted, textTransform: "uppercase", marginBottom: "1rem", fontWeight: 800
+              }}>
+                Join us on Sesame Street!
+              </p>
 
-            <h1 style={{
-              fontFamily: "'Bubblegum Sans', cursive",
-              fontSize: "clamp(3.5rem, 8vw, 5rem)",
-              color: C.blue,
-              lineHeight: "1.1",
-              marginBottom: "1rem",
-              textShadow: `3px 3px 0px ${C.yellow}, -1px -1px 0px white`
-            }}>
-              Dane Adrielle is turning ONE!
-            </h1>
+              <h1 style={{
+                fontFamily: "'Bubblegum Sans', cursive",
+                fontSize: "clamp(3.5rem, 8vw, 5rem)",
+                color: C.blue,
+                lineHeight: "1.1",
+                marginBottom: "1rem",
+                textShadow: `3px 3px 0px ${C.yellow}, -1px -1px 0px white`
+              }}>
+                Dane Adrielle is turning ONE!
+              </h1>
 
-            <p style={{
-              fontFamily: "'Nunito', sans-serif",
-              fontSize: "1.2rem", color: C.textDark,
-              lineHeight: "1.6", fontWeight: 600,
-              maxWidth: "500px", margin: "0 auto 2rem"
-            }}>
-              Sunny days, sweeping the clouds away...<br />
-              Can you tell me how to get to Dane Adrielle's Birthday Party?
-            </p>
+              <p style={{
+                fontFamily: "'Nunito', sans-serif",
+                fontSize: "1.2rem", color: C.textDark,
+                lineHeight: "1.6", fontWeight: 600,
+                maxWidth: "500px", margin: "0 auto 2rem"
+              }}>
+                Sunny days, sweeping the clouds away...<br />
+                Can you tell me how to get to Dane Adrielle's Birthday Party?
+              </p>
 
-            <img src="/images/1.JPG" alt="Dane" style={{
-              width: "clamp(200px, 60vw, 280px)", height: "clamp(200px, 60vw, 280px)", objectFit: "cover",
-              borderRadius: "50%", border: `clamp(4px, 2vw, 8px) solid ${C.red}`,
-              boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
-              margin: "0 auto 2rem"
-            }} />
+              <img src="/images/1.JPG" alt="Dane" style={{
+                width: "clamp(200px, 60vw, 280px)", height: "clamp(200px, 60vw, 280px)", objectFit: "cover",
+                borderRadius: "50%", border: `clamp(4px, 2vw, 8px) solid ${C.red}`,
+                boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
+                margin: "0 auto 2rem"
+              }} />
 
-            <Countdown />
+              <Countdown />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── DETAILS ── */}
-      <section id="details" ref={detailsRef} style={{
-        padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
-        background: `linear-gradient(to bottom, #ffffff, ${C.bgLight})`,
-        position: "relative"
-      }}>
-        {/* Peek1 between Hero and Details */}
-        <img src="/images/peek1.png" alt="" style={{ position: "absolute", top: "clamp(-60px, -15vw, -120px)", left: "clamp(-5%, -10vw, -10.5%)", width: "clamp(120px, 30vw, 220px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 5px 15px rgba(0,0,0,0.2))" }} />
+        {/* ── DETAILS ── */}
+        <section id="details" ref={detailsRef} style={{
+          padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
+          background: `linear-gradient(to bottom, #ffffff, ${C.bgLight})`,
+          position: "relative"
+        }}>
+          {/* Peek1 between Hero and Details */}
+          <img src="/images/peek1.png" alt="" style={{ position: "absolute", top: "clamp(-60px, -15vw, -120px)", left: "clamp(-5%, -10vw, -10.5%)", width: "clamp(120px, 30vw, 220px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 5px 15px rgba(0,0,0,0.2))" }} />
 
-        <img src="/images/bert.png" alt="" style={{ position: "absolute", bottom: "0%", left: "-80%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
-        <img src="/images/ernie.png" alt="" style={{ position: "absolute", top: "0%", right: "-10%", width: "70vw", minWidth: "400px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
+          <img src="/images/bert.png" alt="" style={{ position: "absolute", bottom: "0%", left: "-80%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
+          <img src="/images/ernie.png" alt="" style={{ position: "absolute", top: "0%", right: "-10%", width: "70vw", minWidth: "400px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
 
-        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <SectionHeader subtitle="Where & When" title="Party Details" color={C.orange} />
+          <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+            <SectionHeader subtitle="Where & When" title="Party Details" color={C.orange} />
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(1.5rem, 5vw, 2rem)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(1.5rem, 5vw, 2rem)" }}>
 
-            <div style={{
-              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
-              textAlign: "center", border: `3px solid ${C.blue}`,
-              boxShadow: `0 10px 30px ${C.blue}22`,
-              position: "relative"
-            }}>
-              <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ background: C.blue, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z" />
-                  </svg>
+              <div style={{
+                background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
+                textAlign: "center", border: `3px solid ${C.blue}`,
+                boxShadow: `0 10px 30px ${C.blue}22`,
+                position: "relative"
+              }}>
+                <div style={{ position: "relative", zIndex: 1 }}>
+                  <div style={{ background: C.blue, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z" />
+                    </svg>
+                  </div>
+                  <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.blue, marginBottom: "0.5rem" }}>Date</h3>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                    Tuesday, June 16, 2026
+                  </p>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                    Save the Date!
+                  </p>
                 </div>
-                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.blue, marginBottom: "0.5rem" }}>Date</h3>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                  Tuesday, June 16, 2026
-                </p>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
-                  Save the Date!
-                </p>
               </div>
+
+              <div style={{
+                background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
+                textAlign: "center", border: `3px solid ${C.orange}`,
+                boxShadow: `0 10px 30px ${C.orange}22`,
+                position: "relative"
+              }}>
+                <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
+                  <img src="/images/church.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
+                </div>
+                <div style={{ position: "relative", zIndex: 1 }}>
+                  <div style={{ background: C.orange, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                    </svg>
+                  </div>
+                  <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.orange, marginBottom: "0.5rem" }}>First Venue</h3>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                    Our Lady of the Pillar Parish Church
+                  </p>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                    3:00 in the Afternoon
+                  </p>
+                </div>
+              </div>
+
+              <div style={{
+                background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
+                textAlign: "center", border: `3px solid ${C.green}`,
+                boxShadow: `0 10px 30px ${C.green}22`,
+                position: "relative"
+              }}>
+                <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-50px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
+                <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
+                  <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
+                </div>
+                <div style={{ position: "relative", zIndex: 1 }}>
+                  <div style={{ background: C.green, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                    </svg>
+                  </div>
+                  <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.green, marginBottom: "0.5rem" }}>Main Venue</h3>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                    Boulevard Town Square
+                  </p>
+                  <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                    San Fermin, Cauayan City, Isabela<br />
+                    5:00 in the Afternoon
+                  </p>
+                </div>
+              </div>
+
             </div>
 
+            {/* Dress Code */}
             <div style={{
-              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
-              textAlign: "center", border: `3px solid ${C.orange}`,
-              boxShadow: `0 10px 30px ${C.orange}22`,
-              position: "relative"
+              background: "white", padding: "3rem", borderRadius: "30px",
+              marginTop: "3rem", textAlign: "center",
+              boxShadow: "0 15px 40px rgba(0,0,0,0.06)",
+              borderBottom: `8px solid ${C.yellow}`
             }}>
-              <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
-                <img src="/images/church.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
-              </div>
-              <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ background: C.orange, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                  </svg>
-                </div>
-                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.orange, marginBottom: "0.5rem" }}>First Venue</h3>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                  Our Lady of the Pillar Parish Church
-                </p>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
-                  4:00 in the Afternoon
-                </p>
+              <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "2rem", color: C.textDark, marginBottom: "1rem" }}>
+                Dress Code
+              </h3>
+              <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem", color: C.textMuted, marginBottom: "2rem", fontWeight: 600 }}>
+                Wear your favorite colors from Sesame Street!
+              </p>
+              <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem", flexWrap: "wrap" }}>
+                {[
+                  { name: "Blue", color: C.blue },
+                  { name: "Green", color: C.green },
+                  { name: "Yellow", color: C.yellow },
+                ].map(c => (
+                  <div key={c.name} style={{
+                    display: "flex", alignItems: "center", gap: "0.8rem",
+                    padding: "0.8rem 1.5rem", borderRadius: "50px",
+                    background: "#F5F8FA", border: `2px solid ${c.color}`
+                  }}>
+                    <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: c.color, boxShadow: "0 2px 5px rgba(0,0,0,0.2)" }} />
+                    <span style={{ fontFamily: "'Nunito', sans-serif", fontWeight: 800, fontSize: "1.1rem", color: C.textDark }}>{c.name}</span>
+                  </div>
+                ))}
               </div>
             </div>
-
-            <div style={{
-              background: "white", padding: "clamp(1.5rem, 5vw, 2.5rem)", borderRadius: "24px",
-              textAlign: "center", border: `3px solid ${C.green}`,
-              boxShadow: `0 10px 30px ${C.green}22`,
-              position: "relative"
-            }}>
-              <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-50px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
-              <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
-                <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
-              </div>
-              <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ background: C.green, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                  </svg>
-                </div>
-                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.green, marginBottom: "0.5rem" }}>Main Venue</h3>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                  Boulevard Town Square
-                </p>
-                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
-                  San Fermin, Cauayan City, Isabela<br />
-                  5:00 in the Afternoon
-                </p>
-              </div>
-            </div>
-
           </div>
+        </section>
 
-          {/* Dress Code */}
-          <div style={{
-            background: "white", padding: "3rem", borderRadius: "30px",
-            marginTop: "3rem", textAlign: "center",
-            boxShadow: "0 15px 40px rgba(0,0,0,0.06)",
-            borderBottom: `8px solid ${C.yellow}`
-          }}>
-            <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "2rem", color: C.textDark, marginBottom: "1rem" }}>
-              Dress Code
-            </h3>
-            <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem", color: C.textMuted, marginBottom: "2rem", fontWeight: 600 }}>
-              Wear your favorite colors from Sesame Street!
-            </p>
-            <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem", flexWrap: "wrap" }}>
+        {/* ── GALLERY ── */}
+        <section id="gallery" ref={galleryRef} style={{
+          padding: "6rem 1.5rem",
+          background: C.bgLight,
+          position: "relative"
+        }}>
+          {/* Peeking Character removed from here */}
+
+          <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+            <SectionHeader subtitle="Memories" title="Growing Up" color={C.blue} />
+
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 200px), 1fr))",
+              gap: "1.5rem",
+              padding: "1rem"
+            }}>
               {[
-                { name: "Blue", color: C.blue },
-                { name: "Green", color: C.green },
-                { name: "Yellow", color: C.yellow },
-              ].map(c => (
-                <div key={c.name} style={{
-                  display: "flex", alignItems: "center", gap: "0.8rem",
-                  padding: "0.8rem 1.5rem", borderRadius: "50px",
-                  background: "#F5F8FA", border: `2px solid ${c.color}`
-                }}>
-                  <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: c.color, boxShadow: "0 2px 5px rgba(0,0,0,0.2)" }} />
-                  <span style={{ fontFamily: "'Nunito', sans-serif", fontWeight: 800, fontSize: "1.1rem", color: C.textDark }}>{c.name}</span>
+                "/images/2.jfif",
+                "/images/3.JPG",
+                "/images/4.JPG",
+                "/images/5.JPG",
+                "/images/6.JPG"
+              ].map((src, i) => (
+                <div key={i} style={{
+                  borderRadius: "20px", overflow: "hidden",
+                  boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+                  aspectRatio: "3/4",
+                  border: "6px solid white",
+                  transform: `rotate(${i % 2 === 0 ? 3 : -3}deg)`,
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  cursor: "pointer"
+                }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.transform = "scale(1.05) rotate(0deg)";
+                    e.currentTarget.style.boxShadow = "0 15px 30px rgba(0,0,0,0.2)";
+                    e.currentTarget.style.zIndex = "10";
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.transform = `rotate(${i % 2 === 0 ? 3 : -3}deg)`;
+                    e.currentTarget.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+                    e.currentTarget.style.zIndex = "1";
+                  }}>
+                  <img src={src} alt="Memory" style={{
+                    width: "100%", height: "100%", objectFit: "cover"
+                  }} />
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── GALLERY ── */}
-      <section id="gallery" ref={galleryRef} style={{
-        padding: "6rem 1.5rem",
-        background: C.bgLight,
-        position: "relative"
-      }}>
-        {/* Peeking Character removed from here */}
+        {/* ── RSVP & FOOTER ── */}
+        <section id="rsvp" ref={rsvpRef} style={{
+          padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
+          background: `radial-gradient(circle at center, ${C.red}11, transparent)`,
+          position: "relative"
+        }}>
+          <img src="/images/peek3.png" alt="" style={{ position: "absolute", bottom: "-20%", left: "-7%", width: "clamp(150px, 35vw, 250px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 -5px 15px rgba(0,0,0,0.2))" }} />
+          <img src="/images/kermit.png" alt="" style={{ position: "absolute", bottom: "-5%", right: "-55%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
 
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <SectionHeader subtitle="Memories" title="Growing Up" color={C.blue} />
+          <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+            <SectionHeader subtitle="Let Us Know" title="RSVP" color={C.green} />
 
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 200px), 1fr))",
-            gap: "1.5rem",
-            padding: "1rem"
-          }}>
-            {[
-              "/images/2.jfif",
-              "/images/3.JPG",
-              "/images/4.JPG",
-              "/images/5.JPG",
-              "/images/6.JPG"
-            ].map((src, i) => (
-              <div key={i} style={{
-                borderRadius: "20px", overflow: "hidden",
-                boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
-                aspectRatio: "3/4",
-                border: "6px solid white",
-                transform: `rotate(${i % 2 === 0 ? 3 : -3}deg)`,
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                cursor: "pointer"
-              }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = "scale(1.05) rotate(0deg)";
-                  e.currentTarget.style.boxShadow = "0 15px 30px rgba(0,0,0,0.2)";
-                  e.currentTarget.style.zIndex = "10";
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = `rotate(${i % 2 === 0 ? 3 : -3}deg)`;
-                  e.currentTarget.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
-                  e.currentTarget.style.zIndex = "1";
-                }}>
-                <img src={src} alt="Memory" style={{
-                  width: "100%", height: "100%", objectFit: "cover"
-                }} />
-              </div>
-            ))}
+            <RSVPForm />
+
+            <div style={{ textAlign: "center", marginTop: "4rem" }}>
+              <p style={{
+                fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem",
+                color: C.textMuted, fontStyle: "italic", fontWeight: 600,
+                maxWidth: "600px", margin: "0 auto"
+              }}>
+                "On Sesame Street, we all come together — and that's what birthdays are all about!"
+              </p>
+              <p style={{
+                fontFamily: "'Fredoka One', cursive", fontSize: "1.5rem",
+                color: C.red, marginTop: "2rem", letterSpacing: "1px"
+              }}>
+                With love, <br /> Dane's Family
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── RSVP & FOOTER ── */}
-      <section id="rsvp" ref={rsvpRef} style={{
-        padding: "clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 1.5rem)",
-        background: `radial-gradient(circle at center, ${C.red}11, transparent)`,
-        position: "relative"
-      }}>
-        <img src="/images/peek3.png" alt="" style={{ position: "absolute", bottom: "-20%", left: "-7%", width: "clamp(150px, 35vw, 250px)", zIndex: 15, pointerEvents: "none", filter: "drop-shadow(0 -5px 15px rgba(0,0,0,0.2))" }} />
-        <img src="/images/kermit.png" alt="" style={{ position: "absolute", bottom: "-5%", right: "-55%", width: "200vw", minWidth: "350px", opacity: 0.15, pointerEvents: "none", zIndex: 10 }} />
-
-        <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <SectionHeader subtitle="Let Us Know" title="RSVP" color={C.green} />
-
-          <RSVPForm />
-
-          <div style={{ textAlign: "center", marginTop: "4rem" }}>
-            <p style={{
-              fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem",
-              color: C.textMuted, fontStyle: "italic", fontWeight: 600,
-              maxWidth: "600px", margin: "0 auto"
-            }}>
-              "On Sesame Street, we all come together — and that's what birthdays are all about!"
-            </p>
-            <p style={{
-              fontFamily: "'Fredoka One', cursive", fontSize: "1.5rem",
-              color: C.red, marginTop: "2rem", letterSpacing: "1px"
-            }}>
-              With love, <br /> Dane's Family
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
 
     </>

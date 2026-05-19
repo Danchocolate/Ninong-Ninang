@@ -539,18 +539,45 @@ export default function BdayInvitation() {
               boxShadow: `0 10px 30px ${C.blue}22`,
               position: "relative"
             }}>
-              <div style={{ background: C.blue, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z" />
-                </svg>
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ background: C.blue, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z" />
+                  </svg>
+                </div>
+                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.blue, marginBottom: "0.5rem" }}>Date</h3>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                  Tuesday, June 16, 2026
+                </p>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                  Save the Date!
+                </p>
               </div>
-              <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.blue, marginBottom: "0.5rem" }}>Date & Time</h3>
-              <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                Tuesday, June 16, 2026
-              </p>
-              <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
-                4:00 in the Afternoon
-              </p>
+            </div>
+
+            <div style={{
+              background: "white", padding: "2.5rem", borderRadius: "24px",
+              textAlign: "center", border: `3px solid ${C.orange}`,
+              boxShadow: `0 10px 30px ${C.orange}22`,
+              position: "relative"
+            }}>
+              <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
+                <img src="/images/church.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
+              </div>
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ background: C.orange, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                  </svg>
+                </div>
+                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.orange, marginBottom: "0.5rem" }}>First Venue</h3>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                  Our Lady of the Pillar Parish Church
+                </p>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                  4:00 in the Afternoon
+                </p>
+              </div>
             </div>
 
             <div style={{
@@ -560,18 +587,24 @@ export default function BdayInvitation() {
               position: "relative"
             }}>
               <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "-90px", right: "10%", width: "220px", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
-              <div style={{ background: C.green, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem", position: "relative", zIndex: 10 }}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
-                </svg>
+              <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
+                <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
               </div>
-              <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.green, marginBottom: "0.5rem" }}>Main Venue</h3>
-              <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                Boulevard Town Square San Fermin, Cauayan City, Isabela
-              </p>
-              <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
-                5:00 in the Afternoon
-              </p>
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <div style={{ background: C.green, color: "white", padding: "1rem", borderRadius: "50%", width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem" }}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                  </svg>
+                </div>
+                <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.green, marginBottom: "0.5rem" }}>Main Venue</h3>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
+                  Boulevard Town Square
+                </p>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
+                  San Fermin, Cauayan City, Isabela<br />
+                  5:00 in the Afternoon
+                </p>
+              </div>
             </div>
 
           </div>
@@ -594,7 +627,6 @@ export default function BdayInvitation() {
                 { name: "Blue", color: C.blue },
                 { name: "Green", color: C.green },
                 { name: "Yellow", color: C.yellow },
-                { name: "Red", color: C.red },
               ].map(c => (
                 <div key={c.name} style={{
                   display: "flex", alignItems: "center", gap: "0.8rem",

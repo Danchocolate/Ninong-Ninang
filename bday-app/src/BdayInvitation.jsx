@@ -472,7 +472,19 @@ export default function BdayInvitation() {
               You're Invited!
             </h1>
           </div>
-
+          <div style={{
+            background: "white", padding: "clamp(1rem, 4vw, 1.5rem) clamp(1.5rem, 8vw, 3rem)", borderRadius: "50px",
+            border: `clamp(3px, 1.5vw, 6px) solid ${C.red}`,
+            boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
+            marginTop: "-30px", position: "relative", zIndex: 10,
+            transform: "rotate(-2deg)"
+          }}>
+            <h1 style={{
+              fontFamily: "'Fredoka One', cursive", fontSize: "clamp(2rem, 5vw, 3rem)",
+              color: C.red, margin: 0, textTransform: "uppercase", letterSpacing: "2px"
+            }}>
+              Ninong & Ninang
+            </h1></div>
           <div className="bounce" style={{
             marginTop: "3rem",
             display: "inline-block",
@@ -578,7 +590,7 @@ export default function BdayInvitation() {
                 Can you tell me how to get to Dane Adrielle's Birthday Party?
               </p>
 
-              <img src="/images/1.JPG" alt="Dane" style={{
+              <img src="/images/1st.jpg" alt="Dane" style={{
                 width: "clamp(200px, 60vw, 280px)", height: "clamp(200px, 60vw, 280px)", objectFit: "cover",
                 borderRadius: "50%", border: `clamp(4px, 2vw, 8px) solid ${C.red}`,
                 boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
@@ -660,7 +672,7 @@ export default function BdayInvitation() {
                 boxShadow: `0 10px 30px ${C.green}22`,
                 position: "relative"
               }}>
-                <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-50px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
+                <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-62px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
                 <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
                   <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
                 </div>
@@ -734,6 +746,7 @@ export default function BdayInvitation() {
               padding: "1rem"
             }}>
               {[
+                "/images/1.JPG",
                 "/images/2.jfif",
                 "/images/3.JPG",
                 "/images/4.JPG",

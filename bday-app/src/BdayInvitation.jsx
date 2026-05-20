@@ -731,7 +731,6 @@ export default function BdayInvitation() {
                   </p>
                 </div>
               </div>
-
             </div>
 
             {/* Dress Code */}

@@ -480,8 +480,15 @@ export default function BdayInvitation() {
             border: `clamp(3px, 1.5vw, 6px) solid ${C.green}`,
             boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
             marginTop: "-30px", position: "relative", zIndex: 10,
-            transform: "rotate(-2deg)"
+            transform: "rotate(-2deg)",
+            textAlign: "center"
           }}>
+            <p style={{
+              fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem", color: C.textDark, fontWeight: 800,
+              textTransform: "uppercase", letterSpacing: "1px", marginBottom: "0.2rem"
+            }}>
+              Ninong & Ninang,
+            </p>
             <h1 style={{
               fontFamily: "'Fredoka One', cursive", fontSize: "clamp(2rem, 5vw, 3rem)",
               color: C.green, margin: 0, textTransform: "uppercase", letterSpacing: "2px"
@@ -609,7 +616,7 @@ export default function BdayInvitation() {
                 marginBottom: "1rem",
                 textShadow: `3px 3px 0px ${C.yellow}, -1px -1px 0px white`
               }}>
-                Dane Adriele is turning ONE!
+                Dane Adriel is turning ONE!
               </h1>
 
               <p style={{
@@ -619,7 +626,7 @@ export default function BdayInvitation() {
                 maxWidth: "500px", margin: "0 auto 2rem"
               }}>
                 Sunny days, sweeping the clouds away...<br />
-                Can you tell me how to get to Dane Adriele's Birthday Party?
+                Can you tell me how to get to Dane Adriel's Birthday Party?
               </p>
 
               <img src="/images/1st.jpg" alt="Dane" style={{
@@ -704,7 +711,7 @@ export default function BdayInvitation() {
                 boxShadow: `0 10px 30px ${C.green}22`,
                 position: "relative"
               }}>
-                <img src="/images/peek2.png" alt="" style={{ position: "absolute", top: "clamp(-62px, -10vw, -90px)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
+                <img src="/images/peek2.png" alt="" style={{ position: "absolute", bottom: "100%", transform: "translateY(15%)", right: "5%", width: "clamp(120px, 30vw, 220px)", zIndex: 15, filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.15))", pointerEvents: "none" }} />
                 <div style={{ position: "absolute", inset: 0, borderRadius: "20px", overflow: "hidden", zIndex: 0 }}>
                   <img src="/images/boulevard.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.15 }} />
                 </div>
@@ -737,8 +744,18 @@ export default function BdayInvitation() {
               <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "2rem", color: C.textDark, marginBottom: "1rem" }}>
                 Dress Code
               </h3>
+              <div style={{
+                background: `${C.yellow}22`, padding: "1rem 1.5rem", borderRadius: "15px",
+                borderLeft: `6px solid ${C.orange}`, marginBottom: "1.5rem",
+                display: "inline-block", boxShadow: "0 4px 15px rgba(0,0,0,0.05)"
+              }}>
+                <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, margin: 0, fontWeight: 800 }}>
+                  <span style={{ color: C.orange, fontSize: "1.2rem", marginRight: "0.5rem" }}>✨</span>
+                  Ninongs & Ninangs are advised to wear white during the baptismal ceremony.
+                </p>
+              </div>
               <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.2rem", color: C.textMuted, marginBottom: "2rem", fontWeight: 600 }}>
-                Wear your favorite colors from Sesame Street!
+                Wear your favorite colors from Sesame Street for the party!
               </p>
               <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem", flexWrap: "wrap" }}>
                 {[

@@ -723,7 +723,7 @@ export default function BdayInvitation() {
                   </div>
                   <h3 style={{ fontFamily: "'Fredoka One', cursive", fontSize: "1.6rem", color: C.green, marginBottom: "0.5rem" }}>Main Venue</h3>
                   <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textDark, fontWeight: 700 }}>
-                    Boulevard Town Square
+                    New Boulevard Town Square
                   </p>
                   <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: "1.1rem", color: C.textMuted, fontWeight: 600 }}>
                     San Fermin, Cauayan City, Isabela<br />
